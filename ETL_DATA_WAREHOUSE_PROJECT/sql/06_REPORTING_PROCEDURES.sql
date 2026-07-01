@@ -1,11 +1,5 @@
--- 06_REPORTING_PROCEDURES.sql
--- Purpose: Stored procedures for populating reporting layer / marts.
---
--- This file contains reporting/mart build procedures, with ETL-style audit/error logging.
-
--- ============================================================================
+-- Build fact tables, dimensions, and aggregates
 -- BUILD DIMENSION: DATE (Pre-populated)
-
 
 CREATE OR REPLACE PROCEDURE sp_build_dim_date (
     p_start_year IN NUMBER DEFAULT 2020,
