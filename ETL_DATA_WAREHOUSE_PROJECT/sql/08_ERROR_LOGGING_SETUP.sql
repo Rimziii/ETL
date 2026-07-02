@@ -1,11 +1,5 @@
--- ============================================================================
--- 08_ERROR_LOGGING_SETUP.sql
 -- Error handling, logging, and alerting infrastructure
--- ============================================================================
-
--- ============================================================================
 -- COMPREHENSIVE ERROR LOG PROCEDURE
--- ============================================================================
 
 CREATE OR REPLACE PROCEDURE sp_log_error (
     p_procedure_name IN VARCHAR2,
